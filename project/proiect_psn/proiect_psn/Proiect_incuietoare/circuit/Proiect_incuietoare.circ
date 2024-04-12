@@ -1,0 +1,1028 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#Base" name="8"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="downloadBoard" val="NEXYS4_total"/>
+    <a name="downloadFrequency" val="1.0"/>
+    <a name="simulationFrequency" val="2048000.0"/>
+    <boardmap boardname="NEXYS4_total">
+      <mc key="/AD_CIF" map="505,233"/>
+      <mc key="/DOWN" map="553,267"/>
+      <mc key="/LED_1" map="101,337"/>
+      <mc key="/LED_2" map="137,337"/>
+      <mc key="/MASTER_RESET" map="90,366"/>
+      <mc key="/RESET" map="601,232"/>
+      <mc key="/START" map="555,233"/>
+      <mc key="/UP" map="557,197"/>
+      <mc key="/anod" pmap="490_279_0,447_279_0,398_278_0,352_279_0,300_277_0,255_277_0,210_277_0,159_278_0"/>
+      <mc key="/catod" pmap="162_313_0,151_295_0,151_313_0,162_329_0,181_314_0,181_294_0,160_293_0"/>
+    </boardmap>
+    <comp lib="0" loc="(150,390)" name="Clock"/>
+    <comp lib="0" loc="(1760,960)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="anod"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1780,910)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="catod"/>
+      <a name="output" val="true"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="5" loc="(150,470)" name="Button">
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="5" loc="(150,490)" name="Button">
+      <a name="label" val="MASTER_RESET"/>
+    </comp>
+    <comp lib="5" loc="(210,310)" name="Button">
+      <a name="label" val="START"/>
+    </comp>
+    <comp lib="5" loc="(210,330)" name="Button">
+      <a name="label" val="AD_CIF"/>
+    </comp>
+    <comp lib="5" loc="(210,350)" name="Button">
+      <a name="label" val="UP"/>
+    </comp>
+    <comp lib="5" loc="(210,370)" name="Button">
+      <a name="label" val="DOWN"/>
+    </comp>
+    <comp lib="5" loc="(490,310)" name="LED">
+      <a name="label" val="LED_1"/>
+    </comp>
+    <comp lib="5" loc="(490,330)" name="LED">
+      <a name="label" val="LED_2"/>
+    </comp>
+    <comp loc="(1020,170)" name="Registru_mem_cif">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="registru_mem_cif_2"/>
+    </comp>
+    <comp loc="(1020,280)" name="Registru_mem_cif">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="registru_mem_cif_3"/>
+    </comp>
+    <comp loc="(1020,390)" name="Registru_mem_cif">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="registru_mem_cif_4"/>
+    </comp>
+    <comp loc="(1020,500)" name="Registru_mem_cif">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="registru_mem_cif_5"/>
+    </comp>
+    <comp loc="(1020,60)" name="Registru_mem_cif">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="registru_mem_cif_1"/>
+    </comp>
+    <comp loc="(1020,610)" name="Registru_mem_cif">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="registru_mem_cif_6"/>
+    </comp>
+    <comp loc="(1390,890)" name="catod_anod">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="catod_anod_1"/>
+    </comp>
+    <comp loc="(1490,380)" name="Comparator_4b">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="comparator_4b_2"/>
+    </comp>
+    <comp loc="(1490,540)" name="Comparator_4b">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="comparator_4b_3"/>
+    </comp>
+    <comp loc="(1500,230)" name="Comparator_4b">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="comparator_4b_1"/>
+    </comp>
+    <comp loc="(1700,910)" name="SSD_DEC">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="ssd_dec_1"/>
+    </comp>
+    <comp loc="(440,310)" name="UC">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="uc_1"/>
+    </comp>
+    <comp loc="(620,660)" name="Numarator_rev_1_15">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="numarator_rev_1_15_1"/>
+    </comp>
+    <comp loc="(740,940)" name="num_ssd">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="num_ssd_1"/>
+    </comp>
+    <wire from="(100,1090)" to="(1170,1090)"/>
+    <wire from="(100,140)" to="(100,1090)"/>
+    <wire from="(100,140)" to="(480,140)"/>
+    <wire from="(1020,170)" to="(1050,170)"/>
+    <wire from="(1020,280)" to="(1070,280)"/>
+    <wire from="(1020,390)" to="(1090,390)"/>
+    <wire from="(1020,500)" to="(1110,500)"/>
+    <wire from="(1020,60)" to="(1030,60)"/>
+    <wire from="(1020,610)" to="(1130,610)"/>
+    <wire from="(1030,60)" to="(1030,950)"/>
+    <wire from="(1030,60)" to="(1270,60)"/>
+    <wire from="(1030,950)" to="(1170,950)"/>
+    <wire from="(1050,1010)" to="(1170,1010)"/>
+    <wire from="(1050,170)" to="(1050,1010)"/>
+    <wire from="(1050,170)" to="(1200,170)"/>
+    <wire from="(1070,280)" to="(1070,970)"/>
+    <wire from="(1070,280)" to="(1190,280)"/>
+    <wire from="(1070,970)" to="(1170,970)"/>
+    <wire from="(1090,1030)" to="(1170,1030)"/>
+    <wire from="(1090,390)" to="(1090,1030)"/>
+    <wire from="(1090,390)" to="(1130,390)"/>
+    <wire from="(1110,500)" to="(1110,990)"/>
+    <wire from="(1110,500)" to="(1190,500)"/>
+    <wire from="(1110,990)" to="(1170,990)"/>
+    <wire from="(1130,1050)" to="(1170,1050)"/>
+    <wire from="(1130,390)" to="(1130,400)"/>
+    <wire from="(1130,400)" to="(1270,400)"/>
+    <wire from="(1130,610)" to="(1130,1050)"/>
+    <wire from="(1130,610)" to="(1140,610)"/>
+    <wire from="(1140,560)" to="(1140,610)"/>
+    <wire from="(1140,560)" to="(1270,560)"/>
+    <wire from="(1190,280)" to="(1190,380)"/>
+    <wire from="(1190,380)" to="(1270,380)"/>
+    <wire from="(1190,500)" to="(1190,540)"/>
+    <wire from="(1190,540)" to="(1270,540)"/>
+    <wire from="(120,1020)" to="(920,1020)"/>
+    <wire from="(120,160)" to="(120,1020)"/>
+    <wire from="(120,160)" to="(470,160)"/>
+    <wire from="(1200,170)" to="(1200,250)"/>
+    <wire from="(1200,250)" to="(1280,250)"/>
+    <wire from="(1270,230)" to="(1280,230)"/>
+    <wire from="(1270,60)" to="(1270,230)"/>
+    <wire from="(1390,890)" to="(1480,890)"/>
+    <wire from="(1390,910)" to="(1430,910)"/>
+    <wire from="(1430,910)" to="(1430,960)"/>
+    <wire from="(1430,960)" to="(1760,960)"/>
+    <wire from="(1480,890)" to="(1480,910)"/>
+    <wire from="(1490,230)" to="(1500,230)"/>
+    <wire from="(1490,380)" to="(1540,380)"/>
+    <wire from="(1490,540)" to="(1530,540)"/>
+    <wire from="(150,390)" to="(160,390)"/>
+    <wire from="(150,470)" to="(220,470)"/>
+    <wire from="(150,490)" to="(220,490)"/>
+    <wire from="(1500,230)" to="(1550,230)"/>
+    <wire from="(1530,540)" to="(1530,830)"/>
+    <wire from="(1540,380)" to="(1540,840)"/>
+    <wire from="(1550,230)" to="(1550,850)"/>
+    <wire from="(160,200)" to="(160,390)"/>
+    <wire from="(160,200)" to="(550,200)"/>
+    <wire from="(160,390)" to="(160,720)"/>
+    <wire from="(160,390)" to="(220,390)"/>
+    <wire from="(160,720)" to="(160,940)"/>
+    <wire from="(160,720)" to="(400,720)"/>
+    <wire from="(160,940)" to="(430,940)"/>
+    <wire from="(1700,910)" to="(1780,910)"/>
+    <wire from="(190,410)" to="(190,850)"/>
+    <wire from="(190,410)" to="(220,410)"/>
+    <wire from="(190,850)" to="(1550,850)"/>
+    <wire from="(200,430)" to="(200,840)"/>
+    <wire from="(200,430)" to="(220,430)"/>
+    <wire from="(200,840)" to="(1540,840)"/>
+    <wire from="(210,310)" to="(220,310)"/>
+    <wire from="(210,330)" to="(220,330)"/>
+    <wire from="(210,350)" to="(220,350)"/>
+    <wire from="(210,370)" to="(220,370)"/>
+    <wire from="(210,450)" to="(210,830)"/>
+    <wire from="(210,450)" to="(220,450)"/>
+    <wire from="(210,830)" to="(1530,830)"/>
+    <wire from="(350,610)" to="(350,700)"/>
+    <wire from="(350,610)" to="(540,610)"/>
+    <wire from="(350,700)" to="(400,700)"/>
+    <wire from="(370,630)" to="(370,680)"/>
+    <wire from="(370,630)" to="(550,630)"/>
+    <wire from="(370,680)" to="(400,680)"/>
+    <wire from="(390,640)" to="(390,660)"/>
+    <wire from="(390,640)" to="(560,640)"/>
+    <wire from="(390,660)" to="(400,660)"/>
+    <wire from="(430,1010)" to="(900,1010)"/>
+    <wire from="(430,940)" to="(430,1010)"/>
+    <wire from="(430,940)" to="(520,940)"/>
+    <wire from="(440,310)" to="(480,310)"/>
+    <wire from="(440,330)" to="(470,330)"/>
+    <wire from="(440,350)" to="(560,350)"/>
+    <wire from="(440,370)" to="(550,370)"/>
+    <wire from="(440,390)" to="(690,390)"/>
+    <wire from="(440,410)" to="(720,410)"/>
+    <wire from="(440,430)" to="(620,430)"/>
+    <wire from="(440,450)" to="(700,450)"/>
+    <wire from="(440,470)" to="(740,470)"/>
+    <wire from="(440,490)" to="(610,490)"/>
+    <wire from="(440,510)" to="(540,510)"/>
+    <wire from="(440,530)" to="(590,530)"/>
+    <wire from="(440,550)" to="(730,550)"/>
+    <wire from="(470,160)" to="(470,330)"/>
+    <wire from="(470,330)" to="(490,330)"/>
+    <wire from="(480,140)" to="(480,310)"/>
+    <wire from="(480,310)" to="(490,310)"/>
+    <wire from="(540,510)" to="(540,610)"/>
+    <wire from="(550,100)" to="(550,200)"/>
+    <wire from="(550,100)" to="(770,100)"/>
+    <wire from="(550,370)" to="(550,630)"/>
+    <wire from="(560,350)" to="(560,640)"/>
+    <wire from="(590,120)" to="(590,340)"/>
+    <wire from="(590,120)" to="(800,120)"/>
+    <wire from="(590,340)" to="(590,530)"/>
+    <wire from="(590,340)" to="(800,340)"/>
+    <wire from="(590,530)" to="(590,560)"/>
+    <wire from="(590,560)" to="(800,560)"/>
+    <wire from="(610,490)" to="(610,530)"/>
+    <wire from="(610,530)" to="(710,530)"/>
+    <wire from="(620,430)" to="(620,520)"/>
+    <wire from="(620,520)" to="(800,520)"/>
+    <wire from="(620,660)" to="(660,660)"/>
+    <wire from="(660,170)" to="(660,280)"/>
+    <wire from="(660,170)" to="(800,170)"/>
+    <wire from="(660,280)" to="(660,370)"/>
+    <wire from="(660,280)" to="(800,280)"/>
+    <wire from="(660,370)" to="(660,500)"/>
+    <wire from="(660,370)" to="(750,370)"/>
+    <wire from="(660,500)" to="(660,610)"/>
+    <wire from="(660,500)" to="(800,500)"/>
+    <wire from="(660,60)" to="(660,170)"/>
+    <wire from="(660,60)" to="(800,60)"/>
+    <wire from="(660,610)" to="(660,660)"/>
+    <wire from="(660,610)" to="(800,610)"/>
+    <wire from="(660,660)" to="(660,770)"/>
+    <wire from="(660,770)" to="(820,770)"/>
+    <wire from="(690,80)" to="(690,390)"/>
+    <wire from="(690,80)" to="(800,80)"/>
+    <wire from="(700,190)" to="(700,450)"/>
+    <wire from="(700,190)" to="(800,190)"/>
+    <wire from="(710,530)" to="(710,630)"/>
+    <wire from="(710,630)" to="(800,630)"/>
+    <wire from="(720,300)" to="(720,410)"/>
+    <wire from="(720,300)" to="(800,300)"/>
+    <wire from="(730,230)" to="(730,450)"/>
+    <wire from="(730,230)" to="(800,230)"/>
+    <wire from="(730,450)" to="(730,550)"/>
+    <wire from="(730,450)" to="(800,450)"/>
+    <wire from="(730,550)" to="(730,670)"/>
+    <wire from="(730,670)" to="(800,670)"/>
+    <wire from="(740,410)" to="(740,470)"/>
+    <wire from="(740,410)" to="(800,410)"/>
+    <wire from="(740,940)" to="(890,940)"/>
+    <wire from="(750,370)" to="(750,390)"/>
+    <wire from="(750,390)" to="(800,390)"/>
+    <wire from="(770,100)" to="(770,210)"/>
+    <wire from="(770,100)" to="(800,100)"/>
+    <wire from="(770,210)" to="(770,320)"/>
+    <wire from="(770,210)" to="(800,210)"/>
+    <wire from="(770,320)" to="(770,430)"/>
+    <wire from="(770,320)" to="(800,320)"/>
+    <wire from="(770,430)" to="(770,540)"/>
+    <wire from="(770,430)" to="(800,430)"/>
+    <wire from="(770,540)" to="(770,650)"/>
+    <wire from="(770,540)" to="(800,540)"/>
+    <wire from="(770,650)" to="(800,650)"/>
+    <wire from="(820,1070)" to="(1170,1070)"/>
+    <wire from="(820,770)" to="(820,1070)"/>
+    <wire from="(890,890)" to="(1170,890)"/>
+    <wire from="(890,890)" to="(890,940)"/>
+    <wire from="(900,910)" to="(1170,910)"/>
+    <wire from="(900,910)" to="(900,1010)"/>
+    <wire from="(920,930)" to="(1170,930)"/>
+    <wire from="(920,930)" to="(920,1020)"/>
+  </circuit>
+  <vhdl name="Numarator_rev_1_15">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Numarator_rev_1_15 IS
+	PORT(en_up : in std_logic;
+  		en_down : in std_logic;
+  		load : in std_logic;
+  		clk : in std_logic;
+  		q : out std_logic_vector(3 downto 0));
+END Numarator_rev_1_15;
+
+
+ARCHITECTURE TypeArchitecture OF Numarator_rev_1_15 IS
+
+signal aux : std_logic_vector(3 downto 0) := "0001";
+
+BEGIN
+	process(clk)
+	begin
+			if load = '1' then aux &lt;= "0001";
+			elsif en_up = '1' then
+				if aux = "1111" then aux &lt;= "0001";
+				else aux &lt;= aux + 1;
+				end if;
+			elsif en_down = '1' then 
+				if aux = "0001" then aux &lt;= "1111";
+				else aux &lt;= aux - 1;
+				end if;
+			end if;
+		q &lt;= aux;
+	end process;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="Registru_mem_cif">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+USE ieee.std_logic_unsigned.all;
+&#13;
+ENTITY Registru_mem_cif IS&#13;
+	PORT(d : in std_logic_vector(3 downto 0);
+		mem_cif : in std_logic;
+		clk : in std_logic;
+		q : out std_logic_vector(3 downto 0)&#13;;
+		reset : in std_logic);&#13;
+END Registru_mem_cif;&#13;
+
+ARCHITECTURE TypeArchitecture OF Registru_mem_cif IS&#13;
+
+signal aux : std_logic_vector(3 downto 0) := (others =&gt; '0');&#13;
+
+BEGIN&#13;
+	
+	process(clk)
+	begin
+		if clk'event and clk = '1' and mem_cif = '1' then
+			aux &lt;= d;
+		end if;
+
+		if aux = "UUUU" or reset = '1' then aux &lt;= x"0";
+		end if;
+
+		q &lt;= aux;
+	end process;
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="Comparator_4b">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY Comparator_4b IS&#13;
+	PORT(&#13;a : in std_logic_vector(3 downto 0);
+		b : in std_logic_vector(3 downto 0);
+		egal : out std_logic);&#13;
+END Comparator_4b;&#13;
+
+ARCHITECTURE TypeArchitecture OF Comparator_4b IS&#13;
+&#13;
+BEGIN&#13;
+&#13;
+	process(a, b)
+	begin
+		if a = b then egal &lt;= '1';
+		else egal &lt;= '0';
+		end if;
+	end process;
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="UC">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY UC IS&#13;
+	PORT(start : in std_logic;
+		ad_cif : in std_logic;
+		&#13;up : in std_logic;
+		down : in std_logic;
+		clk : in std_logic;
+		intr_cif : out std_logic;
+		liber_ocupat : inout std_logic;
+		egal1, egal2, egal3 : in std_logic;
+		reset : in std_logic;
+		master_reset : in std_logic;
+		en_up : out std_logic;
+		en_down : out std_logic;
+		mem_cif1 : out std_logic;
+		mem_cif2 : out std_logic;
+		mem_cif3 : out std_logic;
+		mem_cif4 : out std_logic;
+		mem_cif5 : out std_logic;
+		mem_cif6 : out std_logic;
+		RC : out std_logic;
+		r_tot_reg : out std_logic;
+		r_part_reg : out std_logic);&#13;
+END UC;&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF UC IS&#13;
+&#13;
+type mod_stare is (ST0, ST1, ST2, ST3, ST4, ST5, ST6, ST7, ST8, ST9, ST10, ST11, ST12, ST13, ST14, ST15);
+
+signal stare, nxstare : mod_stare;
+
+signal verod_cif : std_logic := '0';
+
+BEGIN&#13;
+&#13;
+	act_stare: process(clk)
+	begin
+		if clk'event and clk = '1' then
+			stare &lt;= nxstare;
+		end if;
+	end process;&#13;
+
+	trans_stare: process(stare, clk)
+	begin
+
+	en_up &lt;= '0';
+	en_down &lt;= '0';
+
+	if clk = '1' then
+		intr_cif &lt;= '0';
+		liber_ocupat &lt;= '0';
+		mem_cif1 &lt;= '0';
+		mem_cif2 &lt;= '0';
+		mem_cif3 &lt;= '0';
+		mem_cif4 &lt;= '0';
+		mem_cif5 &lt;= '0';
+		mem_cif6 &lt;= '0';
+		RC &lt;= '0';
+		r_tot_reg &lt;= '0';
+		r_part_reg &lt;= '0';
+
+		case stare is
+			when ST0 =&gt;
+				if start = '1' then
+					nxstare &lt;= ST1;
+				end if;
+			when ST1 =&gt;
+				if ad_cif = '1' then
+					intr_cif &lt;= '1';	nxstare &lt;= ST2;
+				end if;
+			when ST2 =&gt;							--cif1
+				intr_cif &lt;= '1';
+				if ad_cif = '0' then verod_cif &lt;= '1';
+				end if;
+
+				if ad_cif = '1' and verod_cif = '1' then
+					mem_cif1 &lt;= '1';	RC &lt;= '1';	verod_cif &lt;= '0';	nxstare &lt;= ST4;
+				end if;
+				if up = '1' then
+					en_up &lt;= '1';
+					nxstare &lt;= ST3;
+				elsif down = '1' then
+					en_down &lt;= '1';
+					nxstare &lt;= ST3;
+				end if;
+			when ST3 =&gt;
+				intr_cif &lt;= '1';
+				if up = '0' and down = '0' then
+				
+					if ad_cif = '1' then
+						mem_cif1 &lt;= '1';	RC &lt;= '1';
+						nxstare &lt;= ST4;
+					else
+						nxstare &lt;= ST2;
+					end if;
+				end if;
+			when ST4 =&gt;						--cif2
+				intr_cif &lt;= '1';
+				if ad_cif = '0' then verod_cif &lt;= '1';
+				end if;
+
+				if ad_cif = '1' and verod_cif = '1' then
+					mem_cif2 &lt;= '1';	RC &lt;= '1';	verod_cif &lt;= '0';	nxstare &lt;= ST6;
+				end if;				
+				if up = '1' then
+					en_up &lt;= '1';
+					nxstare &lt;= ST5;
+				elsif down = '1' then
+					en_down &lt;= '1';
+					nxstare &lt;= ST5;
+				end if;
+			when ST5 =&gt;
+				intr_cif &lt;= '1';
+				if up = '0' and down = '0' then
+					if ad_cif = '1' then
+						mem_cif2 &lt;= '1';	RC &lt;= '1';
+						nxstare &lt;= ST6;
+					else
+						nxstare &lt;= ST4;
+					end if;
+				end if;
+			when ST6 =&gt;						--cif3
+				intr_cif &lt;= '1';
+				if ad_cif = '0' then verod_cif &lt;= '1';
+				end if;
+
+				if ad_cif = '1' and verod_cif = '1' then
+					mem_cif3 &lt;= '1';	RC &lt;= '1';	verod_cif &lt;= '0';	nxstare &lt;= ST8;
+				end if;
+				if up = '1' then
+					en_up &lt;= '1';
+					nxstare &lt;= ST7;
+				elsif down = '1' then
+					en_down &lt;= '1';
+					nxstare &lt;= ST7;
+				end if;
+			when ST7 =&gt;
+				intr_cif &lt;= '1';
+				if up = '0' and down = '0' then
+					if ad_cif = '1' then
+						mem_cif3 &lt;= '1';	RC &lt;= '1';
+						nxstare &lt;= ST8;
+					else
+						nxstare &lt;= ST6;
+					end if;
+				end if;
+			when ST8 =&gt;							--blocat
+				liber_ocupat &lt;= '1';
+				if ad_cif = '1' then
+					nxstare &lt;= ST9;
+				end if;
+			when ST9 =&gt;							--cif1vf
+				liber_ocupat &lt;= '1';
+				intr_cif &lt;= '1';
+				if ad_cif = '0' then verod_cif &lt;= '1';
+				end if;
+
+				if ad_cif = '1' and verod_cif = '1' then
+					mem_cif4 &lt;= '1';	RC &lt;= '1';	verod_cif &lt;= '0';	nxstare &lt;= ST11;
+				end if;
+				
+				if up = '1' then
+					en_up &lt;= '1';
+					nxstare &lt;= ST10;
+				elsif down = '1' then
+					en_down &lt;= '1';
+					nxstare &lt;= ST10;
+				end if;
+			when ST10 =&gt;
+				liber_ocupat &lt;= '1';
+				intr_cif &lt;= '1';
+				
+				if up = '0' and down = '0' then
+					if ad_cif = '1' then
+						mem_cif4 &lt;= '1';	RC &lt;= '1';
+						nxstare &lt;= ST11;
+					else
+						nxstare &lt;= ST9;
+					end if;
+				end if;
+			when ST11 =&gt;							--cif2vf
+				liber_ocupat &lt;= '1';
+				intr_cif &lt;= '1';
+				if ad_cif = '0' then verod_cif &lt;= '1';
+				end if;
+
+				if ad_cif = '1' and verod_cif = '1' then
+					mem_cif5 &lt;= '1';	RC &lt;= '1';	verod_cif &lt;= '0';	nxstare &lt;= ST13;
+				end if;
+				
+				if up = '1' then
+					en_up &lt;= '1';
+					nxstare &lt;= ST12;
+				elsif down = '1' then
+					en_down &lt;= '1';
+					nxstare &lt;= ST12;
+				end if;
+			when ST12 =&gt;
+				liber_ocupat &lt;= '1';
+				intr_cif &lt;= '1';
+				
+				if up = '0' and down = '0' then
+					if ad_cif = '1' then
+						mem_cif5 &lt;= '1';	RC &lt;= '1';
+						nxstare &lt;= ST13;
+					else
+						nxstare &lt;= ST11;
+					end if;
+				end if;
+			when ST13 =&gt;							--cif3vf
+				liber_ocupat &lt;= '1';
+				intr_cif &lt;= '1';
+				if ad_cif = '0' then verod_cif &lt;= '1';
+				end if;
+
+				if ad_cif = '1' and verod_cif = '1' then
+					mem_cif6 &lt;= '1';	RC &lt;= '1';	verod_cif &lt;= '0';	nxstare &lt;= ST15;
+				end if;
+				
+				if up = '1' then
+					en_up &lt;= '1';
+					nxstare &lt;= ST14;
+				elsif down = '1' then
+					en_down &lt;= '1';
+					nxstare &lt;= ST14;
+				end if;
+			when ST14 =&gt;
+				liber_ocupat &lt;= '1';
+				intr_cif &lt;= '1';
+				
+				if up = '0' and down = '0' then
+					if ad_cif = '1' then
+						mem_cif6 &lt;= '1';	RC &lt;= '1';
+						nxstare &lt;= ST15;
+					else
+						nxstare &lt;= ST13;
+					end if;
+				end if;
+			when ST15 =&gt;								--vf deblocare/ revenire in starea initiala
+				liber_ocupat &lt;= '1';
+				if egal1 = '1' and egal2 = '1' and egal3 = '1' then
+					nxstare &lt;= ST1;	r_tot_reg &lt;= '1';	r_part_reg &lt;= '1';
+				else
+					nxstare &lt;= ST8;	r_part_reg &lt;= '1';
+				end if;
+		end case;
+
+		if reset = '1'	then
+			RC &lt;= '1';
+			if liber_ocupat = '0' then nxstare &lt;= ST2;	r_tot_reg &lt;= '1';
+			else nxstare &lt;= ST9;	r_part_reg &lt;= '1';
+			end if;
+		end if;
+
+		if master_reset = '1' then nxstare &lt;= ST2;	RC &lt;= '1';	r_tot_reg &lt;= '1';	r_part_reg &lt;= '1';
+		end if;
+
+	end if;
+	end process;
+
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="SSD_DEC">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY SSD_DEC IS&#13;
+	PORT(nr : in std_logic_vector(3 downto 0);
+		q : inout std_logic_vector(6 downto 0)&#13;);			
+END SSD_DEC;&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF SSD_DEC IS&#13;
+&#13;
+BEGIN&#13;
+&#13;
+	process(nr)
+
+	variable aux : std_logic_vector(6 downto 0) := (others =&gt; '0');
+	
+	begin
+		case nr is
+			when x"0" =&gt;  aux := "0000000";
+   	 		when x"1" =&gt;  aux := "0110000";
+    			when x"2" =&gt;  aux := "1101101";
+    			when x"3" =&gt;  aux := "1111001";
+    			when x"4" =&gt;  aux := "0110011";
+    			when x"5" =&gt;  aux := "1011011";
+    			when x"6" =&gt;  aux := "1011111";
+    			when x"7" =&gt;  aux := "1110000";
+    			when x"8" =&gt;  aux := "1111111";
+    			when x"9" =&gt;  aux := "1111011";
+    			when x"A" =&gt;  aux := "1110111";
+    			when x"B" =&gt;  aux := "0011111";
+    			when x"C" =&gt;  aux := "1001110";
+    			when x"D" =&gt;  aux := "0111101";
+    			when x"E" =&gt;  aux := "1001111";
+    			when others =&gt; aux := "1000111";
+		end case;
+		q &lt;= aux;
+	end process;
+	
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="num_ssd">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+USE ieee.std_logic_unsigned.all;
+&#13;
+
+ENTITY num_ssd IS&#13;
+	PORT(clk : in std_logic;
+		num : out std_logic_vector(2 downto 0));&#13;
+END num_ssd;&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF num_ssd IS&#13;
+&#13;
+signal aux : std_logic_vector(15 downto 0) := (others =&gt; '0');
+
+BEGIN&#13;
+
+	process(clk)
+	begin
+		if clk = '1' then
+			num(2) &lt;= aux(15);
+			num(1) &lt;= aux(14);
+			num(0) &lt;= aux(13);
+			aux &lt;= aux + 1;
+		end if;
+	end process;
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="catod_anod">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+USE ieee.std_logic_unsigned.all&#13;;
+
+ENTITY catod_anod IS&#13;
+	PORT(s : in std_logic_vector(2 downto 0);
+		clk : in std_logic;
+		liber_ocupat : in std_logic;
+		d0, d1, d2, d3, d4, d5, q : in std_logic_vector(3 downto 0);
+		catod : out std_logic_vector(3 downto 0);
+		anod : out std_logic_vector(7 downto 0);
+		on_off : in std_logic);
+END catod_anod;&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF catod_anod IS&#13;
+&#13;
+signal ct1, ct2 : std_logic_vector(1 downto 0) := (others =&gt; '0');
+
+BEGIN&#13;
+
+	process(clk)
+	begin
+		case s is
+			when "000" =&gt;	
+				if liber_ocupat = '0' then
+					if d0 /= x"0" then catod &lt;= d0;
+					else catod &lt;= q;	end if;
+				end if;
+				if liber_ocupat = '1' then
+					if d3 /= x"0" then catod &lt;= d3;
+					else catod &lt;= q;	end if;
+				end if;
+				anod &lt;= "11111110";
+			when "001" =&gt;		
+				if liber_ocupat = '0' then
+					if d1 /= x"0" or d0 = x"0" then catod &lt;= d1;
+					else catod &lt;= q;	end if;
+				end if;
+				if liber_ocupat = '1' then
+					if d4 /= x"0" or d3 = x"0" then catod &lt;= d4;
+					else catod &lt;= q;	end if;
+				end if;
+				anod &lt;= "11111101";
+			when "010" =&gt;	
+				if liber_ocupat = '0' then
+					if d2 /= x"0" or d1 = x"0" then catod &lt;= d2;
+					else catod &lt;= q;	end if;
+				end if;
+				if liber_ocupat = '1' then
+					if d5 /= x"0" or d4 = x"0" then catod &lt;= d5;
+					else catod &lt;= q;	end if;
+				end if;
+				anod &lt;= "11111011";
+			when "011" =&gt; 
+				catod &lt;= x"0";	anod &lt;= "11110111";
+			when "100" =&gt; 
+				catod &lt;= x"0";	anod &lt;= "11101111";
+			when "101" =&gt; 
+				catod &lt;= x"0";	anod &lt;= "11011111";
+			when "110" =&gt; 
+				catod &lt;= x"0";	anod &lt;= "10111111";
+			when "111" =&gt;
+				catod &lt;= x"0";	anod &lt;= "01111111";
+			when others =&gt;
+		end case;
+
+		if on_off = '0' then catod &lt;= x"0";
+		end if;
+	end process;
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="ssdec">LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+USE ieee.std_logic_unsigned.all;&#13;
+
+ENTITY ssdec IS&#13;
+	PORT(&#13;nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);&#13;
+END ssdec;&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF ssdec IS&#13;&#13;
+
+BEGIN&#13;
+
+	a &lt;= nr(6) when anod = "11111110" else '0';
+	b &lt;= nr(5) when anod = "11111110" else '0';
+	c &lt;= nr(4) when anod = "11111110" else '0'; 
+	d &lt;= nr(3) when anod = "11111110" else '0';
+	e &lt;= nr(2) when anod = "11111110" else '0';
+	f &lt;= nr(1) when anod = "11111110" else '0';
+	g &lt;= nr(0) when anod = "11111110" else '0';
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="ssdec1">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ssdec1 IS
+	PORT(nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);
+END ssdec1;
+
+ARCHITECTURE TypeArchitecture OF ssdec1 IS
+
+
+BEGIN
+
+	a &lt;= nr(6) when anod = "11111101" else '0';
+	b &lt;= nr(5) when anod = "11111101" else '0';
+	c &lt;= nr(4) when anod = "11111101" else '0'; 
+	d &lt;= nr(3) when anod = "11111101" else '0';
+	e &lt;= nr(2) when anod = "11111101" else '0';
+	f &lt;= nr(1) when anod = "11111101" else '0';
+	g &lt;= nr(0) when anod = "11111101" else '0';
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="ssdec2">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ssdec2 IS
+	PORT(nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);
+END ssdec2;
+
+ARCHITECTURE TypeArchitecture OF ssdec2 IS
+
+
+BEGIN
+
+	a &lt;= nr(6) when anod = "11111011" else '0';
+	b &lt;= nr(5) when anod = "11111011" else '0';
+	c &lt;= nr(4) when anod = "11111011" else '0'; 
+	d &lt;= nr(3) when anod = "11111011" else '0';
+	e &lt;= nr(2) when anod = "11111011" else '0';
+	f &lt;= nr(1) when anod = "11111011" else '0';
+	g &lt;= nr(0) when anod = "11111011" else '0';
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="ssdec3">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ssdec3 IS
+	PORT(nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);
+END ssdec3;
+
+ARCHITECTURE TypeArchitecture OF ssdec3 IS
+
+
+BEGIN
+
+	a &lt;= nr(6) when anod = "11110111" else '0';
+	b &lt;= nr(5) when anod = "11110111" else '0';
+	c &lt;= nr(4) when anod = "11110111" else '0'; 
+	d &lt;= nr(3) when anod = "11110111" else '0';
+	e &lt;= nr(2) when anod = "11110111" else '0';
+	f &lt;= nr(1) when anod = "11110111" else '0';
+	g &lt;= nr(0) when anod = "11110111" else '0';
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="ssdec4">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ssdec4 IS
+	PORT(nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);
+END ssdec4;
+
+ARCHITECTURE TypeArchitecture OF ssdec4 IS
+
+
+BEGIN
+
+	a &lt;= nr(6) when anod = "11101111" else '0';
+	b &lt;= nr(5) when anod = "11101111" else '0';
+	c &lt;= nr(4) when anod = "11101111" else '0'; 
+	d &lt;= nr(3) when anod = "11101111" else '0';
+	e &lt;= nr(2) when anod = "11101111" else '0';
+	f &lt;= nr(1) when anod = "11101111" else '0';
+	g &lt;= nr(0) when anod = "11101111" else '0';
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="ssdec5">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ssdec5 IS
+	PORT(nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);
+END ssdec5;
+
+ARCHITECTURE TypeArchitecture OF ssdec5 IS
+
+
+BEGIN
+
+	a &lt;= nr(6) when anod = "11011111" else '0';
+	b &lt;= nr(5) when anod = "11011111" else '0';
+	c &lt;= nr(4) when anod = "11011111" else '0'; 
+	d &lt;= nr(3) when anod = "11011111" else '0';
+	e &lt;= nr(2) when anod = "11011111" else '0';
+	f &lt;= nr(1) when anod = "11011111" else '0';
+	g &lt;= nr(0) when anod = "11011111" else '0';
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="ssdec6">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ssdec6 IS
+	PORT(nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);
+END ssdec6;
+
+ARCHITECTURE TypeArchitecture OF ssdec6 IS
+
+
+BEGIN
+
+	a &lt;= nr(6) when anod = "10111111" else '0';
+	b &lt;= nr(5) when anod = "10111111" else '0';
+	c &lt;= nr(4) when anod = "10111111" else '0'; 
+	d &lt;= nr(3) when anod = "10111111" else '0';
+	e &lt;= nr(2) when anod = "10111111" else '0';
+	f &lt;= nr(1) when anod = "10111111" else '0';
+	g &lt;= nr(0) when anod = "10111111" else '0';
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="ssdec7">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY ssdec7 IS
+	PORT(nr : in std_logic_vector(6 downto 0);
+		anod : in std_logic_vector(7 downto 0);
+		a, b, c, d, e, f, g : out std_logic);
+END ssdec7;
+
+ARCHITECTURE TypeArchitecture OF ssdec7 IS
+
+
+BEGIN
+
+	a &lt;= nr(6) when anod = "01111111" else '0';
+	b &lt;= nr(5) when anod = "01111111" else '0';
+	c &lt;= nr(4) when anod = "01111111" else '0'; 
+	d &lt;= nr(3) when anod = "01111111" else '0';
+	e &lt;= nr(2) when anod = "01111111" else '0';
+	f &lt;= nr(1) when anod = "01111111" else '0';
+	g &lt;= nr(0) when anod = "01111111" else '0';
+
+END TypeArchitecture;
+</vhdl>
+</project>
